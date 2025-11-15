@@ -1,0 +1,17 @@
+.logo{
+    font-size: 40px;
+    margin: 0;
+    /* padding:0 20px 0 40px; */
+    > span{
+        color: rgb(90, 200, 60);
+    }
+}
+
+.top-logo{
+    color: white;
+    padding-right:5px ;
+}
+
+.bot-logo{
+    color: var(--bgc-header);
+}

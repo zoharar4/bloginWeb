@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f0ad057954.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="main-layout">
+    <header class="main-header">
+        <h1 class="logo top-logo">Blogin<span>.</span></h1>
+        <button class="burger-menu" onclick="onBurgerMenu(this)">☰</button>
+        <nav class="main-nav">
+            <button>Journal</button>
+            <button>About</button>
+            <button>Work</button>
+            <button>Content</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="card">
+            <img src="images/01.jpg" draggable="false" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <button>Continue Reading<i class="fa-solid fa-arrow-right fa-lg"></i></button>
+        </section>
+
+        <section class="card">
+            <img src="images/02.jpg" draggable="false" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <button>Continue Reading<i class="fa-solid fa-arrow-right fa-lg"></i></button>
+        </section>
+
+        <section class="card">
+            <img src="images/03.jpg" draggable="false" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <button>Continue Reading<i class="fa-solid fa-arrow-right fa-lg"></i></button>
+        </section>
+        <nav class="prev-next">
+            <button class="prev"><i class="fa-solid fa-arrow-left fa-lg"></i>Previous </button>
+            <button class="next">Next <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+        </nav>
+    </main>
+
+    <div class="modal">
+        <h1>“Join us to get access to the latest stories!”</h1>
+        <label for="email">Email</label>
+        <input onsubmit="onEmail()" type="email" name="email" id="">
+        <p>We WILL send you 10-20 emails per day like you probably <br>wants so dont worry.</p>
+    </div>
+
+    <footer>
+        <h1 class="logo bot-logo">Blogin<span>.</span></h1>
+        <p class="rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+        <nav class="bot-nav">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-behance"></i>
+        </nav>
+    </footer>
+
+    <script>
+        function onBurgerMenu(button) {
+            const nav = document.querySelector('.main-nav');
+            button.classList.toggle('active');
+            button.textContent = button.classList.contains('active') ? '✖' : '☰';
+            nav.style.right = button.classList.contains('active') ? '0px' : '-315px';
+            nav.style.right = button.classList.contains('active') ? diplay = 'none' : diplay = 'block';
+            console.log('button:',button)
+        }
+
+        function onEmail() {
+            console.log('1123:',1123)
+        }
+    </script>
+</body>
+
+</html>

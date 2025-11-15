@@ -1,0 +1,43 @@
+@media (max-width:950px) {
+    .card {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        >button{
+            padding: 10px;
+        }
+    }
+
+}
+
+@media (max-width:700px) {
+    .main-header{
+        height: 90px;
+    }
+
+    .main-header > h1{
+        justify-self: center;
+    }
+
+    .main-header .main-nav{
+        /* display: none; */
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 90px;
+        right: -315px;
+        z-index: 1;
+        transition: .3s ease-in-out;
+        box-shadow: -10px 10px 5px #333;
+    }
+    
+    .main-nav > button {
+        width: 100%;
+        padding: 20px;
+        font-size: large;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+}

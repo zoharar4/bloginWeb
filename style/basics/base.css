@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html{
+    color: gray;
+    font-family: lato;
+    line-height: 1.71428571;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0 0 1em;
+}
+
+img{
+    width: 100%;
+}

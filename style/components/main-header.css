@@ -1,0 +1,37 @@
+.main-header {
+    background-color: var(--bgc-header);
+    border-bottom: 2px solid rgb(30, 30, 30);
+
+    height: 130px;
+}
+
+.main-nav {
+    text-align: center;
+    height: 100%;
+}
+
+.main-nav > button {
+    background-color: var(--bgc-header);
+    width: 130px;
+    font-size: 16px;
+    color: white;
+    outline: 2px solid rgb(30, 30, 30);
+    border: 0;
+    border-bottom: 5px solid rgb(30, 30, 30);
+}
+
+.main-nav > button:hover {
+    cursor: pointer;
+    color: var(--clr-green);
+    border-bottom-color: var(--clr-green);
+}
+
+.burger-menu {
+    display: none;
+    width: max-content;
+    justify-self: end;
+    padding: 5px 15px;
+    background-color: inherit;
+    color: white;
+    font-size: xx-large;
+}

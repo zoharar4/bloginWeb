@@ -1,0 +1,22 @@
+
+
+.prev-next{
+    position: relative;
+}
+
+.prev,.next{
+    text-transform: uppercase;
+    background-color:white;
+    border: 0;
+    position: absolute;
+    font-size: 18px;
+    padding: 10px;
+    &:hover{
+        color: var(--clr-green);
+        cursor: pointer;
+    }
+}
+
+.next{
+    right: 0;
+}
